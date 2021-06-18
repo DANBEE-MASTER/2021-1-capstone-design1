@@ -20,6 +20,7 @@ Deep learning network model에 NIH Dataset을 학습시키고 14개의 병증에
 Data augmentation 방법에 따른 성능 차이를 살펴보기 위해, X-ray 이미지 정상 2000장, 심장비대증 1000 → 2000장으로 이미지 증대 시킨 이후, DenseNet121 네트워크 모델을 사용하여 학습시킨 이후 Test set에 대한 accuracy 와 클래스에 따른 ROC curve와 AUC 값을 확인하였다. <br/>
  <br/>
 ![](http://khuhub.khu.ac.kr/2021-1-capstone-design1/LSK_Project1/raw/master/README_IMG/01.PNG)
+ <br/>
 다음은 가장 성능이 안좋았던 이미지증대 방법인 가우시안 블러, 가장 성능이 좋았던 이미지증대 방법인 ~5% 랜덤 회전에 대한 Feature Map 추출과 그에 따른 Grad-Cam이다. Grad-Cam을 확인해 보면 같은 이미지라도 네트워크가 전혀 다른 곳을 바라보고 있다는 것을 확인할 수 있다. <br/>
  <br/>
 ![](http://khuhub.khu.ac.kr/2021-1-capstone-design1/LSK_Project1/raw/master/README_IMG/02.PNG)
